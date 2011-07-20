@@ -1,0 +1,38 @@
+* CRIME
+** Overview
+
+   CRIME is a CDMI Reference Implementation written in Erlang.
+
+   This project was put together to support a series of articles covering
+   CDMI and programming web service applications in Erlang.
+
+   The intent of this project is to provide an alternative reference
+   implementation of CDMI that hopefully demonstrates the concepts of CDMI
+   and creating web service applications in Erlang. The end result of this
+   project will be a fully functional CDMI implementation. This project
+   does not attempt to make the most optimized, performant or even scalable
+   CDMI implementation and should be considered as something for
+   demonstration purposes only.
+
+** Requirements
+
+   This project currently uses [[http://www.erlang.org][Erlang]] and [[http://webmachine.basho.com/][Webmachine]] from [[http://basho.com][Basho]].
+
+   The code has been developed using Erlang R14B03.
+
+** Status
+
+   Phase 1: 
+   Re-implementation of the [[http://intotheinfrastructure.blogspot.com/2010/02/worlds-shortest-cdmi-implementation.html][worlds shortest cdmi-implementation]] by David
+   Slik.
+   
+   This version is intended to demonstrate setting up a simple Webmachine
+   application that returns static CDMI content.
+
+** Information on CDMI
+
+CDMI refers to the Cloud Data Management Interface, which has been
+published as a standard by the Storage Networking Industry Association
+([[http://www.snia.org][SNIA]]).
+
+Complete documentation for CDMI may be found [[http://cdmi.sniacloud.com/][here]].

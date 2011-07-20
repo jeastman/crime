@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+{application, crime_web,
+ [
+  {description, "crime_web"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { crime_web_app, []}},
+  {env, []}
+ ]}.
