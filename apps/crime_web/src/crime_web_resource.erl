@@ -17,4 +17,5 @@ content_types_provided(ReqData, Context) ->
     {[{"application/cdmi-container", to_cdmi_root}], ReqData, Context}.
 
 to_cdmi_root(ReqData, State) ->
-    {"{\"objectURI\": \"/\", \"objectID\": \"ACDMIID\", \"parentURI\": \"/\", \"capabilitiesURI\": \"/cdmi_capabilities\", \"completionStatus\": \"Complete\", \"metadata\": {}, \"childrenrange\": \"0-0\", \"children\": [\"cdmi_capabilities/\"]}", ReqData, State}.
+    NewReqData = wrq:set_resp_header("X-CDMI-Specification-Version", "1.0.1", ReqData),
+    {"{\"objectURI\": \"/\", \"objectID\": \"ACDMIID\", \"parentURI\": \"/\", \"capabilitiesURI\": \"/cdmi_capabilities\", \"completionStatus\": \"Complete\", \"metadata\": {}, \"childrenrange\": \"0-0\", \"children\": [\"cdmi_capabilities/\"]}", NewReqData, State}.

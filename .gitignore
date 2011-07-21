@@ -1,4 +1,5 @@
 deps/*
-apps/crime_web/deps/*
+apps/*/deps/*
+apps/*/ebin/*
 priv/log
 *.beam
