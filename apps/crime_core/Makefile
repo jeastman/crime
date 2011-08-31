@@ -1,5 +1,5 @@
 ERL ?= erl
-APP := crime_web
+APP := crime_core
 
 .PHONY: deps
 

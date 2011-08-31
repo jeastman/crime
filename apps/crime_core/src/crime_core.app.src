@@ -1,0 +1,12 @@
+{application, crime_core,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { crime_core_app, []}},
+  {env, []}
+ ]}.

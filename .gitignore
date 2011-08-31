@@ -1,5 +1,7 @@
 deps/*
 apps/*/deps/*
 apps/*/ebin/*
+apps/*/doc/*
+apps/*/.eunit/*
 priv/log
 *.beam

@@ -18,5 +18,8 @@ clean:
 distclean: clean
 	@./rebar delete-deps
 
+test: all
+	@./rebar skip_deps=true eunit
+
 start: app
-	exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -s reloader -s crime_web
+	exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -s reloader -s crime_web -s crime_core
